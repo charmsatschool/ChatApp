@@ -1,8 +1,8 @@
 version: "2.3"
 services:
   node:
-    image: flyxdocker/snake-game
-    container_name: snake
+    image: charmsatschool/chatapp
+    container_name: chatapp
     environment:
       - NODE_ENV=production
       - PORT=3000
