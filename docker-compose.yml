@@ -1,10 +1,11 @@
-version: "2.3"
+version: '3.3'
 services:
-  node:
-    image: charmsforschool/chatapp
-    container_name: chatapp
+  chatapp:
+      image: 'charmsforschool/chatapp'
     environment:
-      - NODE_ENV=production
-      - PORT=3000
+      - "PORT:3700"
     ports:
-      - "80:3000"
+      - "80:3700"
+    volumes:
+      - ./:/app
+  
