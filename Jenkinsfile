@@ -6,7 +6,7 @@ node('appserver_3120_60') {
     }
  
     stage('Build and Tag') {
-        app = docker.build('charmsforschool/ChatApp')
+        app = docker.build('charmsforschool/chatapp')
     }
  
     stage('Post to DockerHub') {
