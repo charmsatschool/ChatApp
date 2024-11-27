@@ -1,7 +1,7 @@
 version: "2.3"
 services:
   node:
-    image: charmsatschool/chatapp
+    image: charmsforschool/chatapp
     container_name: chatapp
     environment:
       - NODE_ENV=production
