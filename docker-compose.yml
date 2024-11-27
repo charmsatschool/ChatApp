@@ -1,11 +1,10 @@
 version: '3.3'
 services:
   chatapp:
-      image: 'charmsforschool/chatapp'
+    image: 'charmsforschool/chatapp'
     environment:
       - "PORT:3700"
     ports:
       - "80:3700"
     volumes:
       - ./:/app
-  
