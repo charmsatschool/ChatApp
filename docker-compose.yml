@@ -1,9 +1,10 @@
-version: '2.4'
+version: "2.3"
 services:
- apache:
-   container_name: 'chatapp'
-   image: 'charmsforschool/chatapp'
-   ports:
-   - '80:80'
-   volumes:
-   - ./:/usr/local/apache2/htdocs
+  node:
+    image: flyxdocker/snake-game
+    container_name: snake
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    ports:
+      - "80:3000"
