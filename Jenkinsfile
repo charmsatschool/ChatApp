@@ -14,7 +14,7 @@ node('appserver_3120_60') {
             def scannerHome = tool 'SonarScanner'
             withSonarQubeEnv('SonarQube') {
                 sh "${scannerHome}/bin/sonar-scanner \
-                    -Dsonar.projectKey=gameapp1 \
+                    -Dsonar.projectKey=chatapp \
                     -Dsonar.sources=."
                     }
                 }
